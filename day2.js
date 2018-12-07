@@ -17,7 +17,7 @@ const checkOccurances = (array) => {
             let foundTwoLetterOccurance = foundTwo;
             let foundThreeLetterOccurance = foundThree;
             
-            if (stringToCheck.length === 0) {
+            if (stringToCheck.length <= 1 || foundTwo && foundThree) {
                 return;
             }
             const characterToCheck = stringToCheck.charAt(0);
